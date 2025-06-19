@@ -1,48 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Симулятор Excel с формулами</title>
-
-  <!-- LuckySheet CSS (обновленный стиль) -->
+  <meta charset="UTF-8">
+  <title>Симулятор Excel с ВПР</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/plugins/css/plugins.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/css/luckysheet.css" />
-
-  <!-- LuckySheet JS -->
   <script src="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/plugins/js/plugin.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/luckysheet.umd.js"></script>
 
   <style>
-    body { font-family: sans-serif; margin:0; padding:0; }
-    #luckysheet { width:100%; height:600px; border: none; }
-    .check-button { text-align:center; padding:10px; }
-    .check-button button { padding:10px 20px; font-size:16px; cursor:pointer; }
-    .feedback { text-align: center; font-size: 18px; margin-top: 20px; font-weight: bold; }
-    .highlight { background-color: #d3f8d3 !important; border: 2px solid green; }
-    .info-box {
-      background: #f0f8ff;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 16px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
+    #luckysheet { width: 100%; height: 600px; }
+    .btn-container { text-align: center; margin-top: 10px; }
   </style>
 </head>
 <body>
-  <h2 style="text-align:center;">Симулятор Excel: Формула VLOOKUP</h2>
-  <div class="info-box">
-    Введите формулу <strong>=VLOOKUP("Груша", A2:B4, 2, FALSE)</strong> в ячейку <strong>B6</strong> для поиска цены груши.
-  </div>
+  <h2 style="text-align: center;">Введите формулу в ячейку B6, например: <code>=ВПР("Груша";A2:B4;2;ЛОЖЬ)</code></h2>
   <div id="luckysheet"></div>
-
-  <div class="check-button">
-    <button onclick="checkAnswer()">Проверить формулу!</button>
+  <div class="btn-container">
+    <button onclick="checkAnswer()">Проверить</button>
   </div>
-
-  <div id="feedback" class="feedback"></div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
