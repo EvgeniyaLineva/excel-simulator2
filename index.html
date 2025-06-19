@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Симулятор Excel с ВПР</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/plugins/css/plugins.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/css/luckysheet.css" />
-  <script src="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/plugins/js/plugin.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/luckysheet.umd.js"></script>
-
-  <style>
-    #luckysheet { width: 100%; height: 600px; }
-    .btn-container { text-align: center; margin-top: 10px; }
-  </style>
-</head>
-<body>
-  <h2 style="text-align: center;">Введите формулу в ячейку B6, например: <code>=ВПР("Груша";A2:B4;2;ЛОЖЬ)</code></h2>
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>LuckySheet ВПР</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/plugins/css/plugins.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/css/luckysheet.css"/>
+<script src="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/plugins/js/plugin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/luckysheet.umd.js"></script>
+<style>#luckysheet { width:100%; height:500px;} .btn {text-align:center; margin:10px;} </style>
+</head><body>
+  <h2>Введите формулу в ячейку <b>B6</b>: <br><code>=ВПР("Груша";A2:B4;2;ЛОЖЬ)</code></h2>
   <div id="luckysheet"></div>
-  <div class="btn-container">
-    <button onclick="checkAnswer()">Проверить</button>
-  </div>
-
+  <div class="btn"><button onclick="checkAnswer()">Проверить</button></div>
   <script src="script.js"></script>
-</body>
-</html>
+</body></html>
+
 
