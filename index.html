@@ -1,14 +1,16 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>LuckySheet ВПР</title>
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta charset="UTF-8"><title>LuckySheet + ВПР на русском</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/plugins/css/plugins.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/css/luckysheet.css"/>
 <script src="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/plugins/js/plugin.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/luckysheet@latest/dist/luckysheet.umd.js"></script>
-<style>#luckysheet { width:100%; height:500px;} .btn {text-align:center; margin:10px;} </style>
-</head><body>
-  <h2>Введите формулу в ячейку <b>B6</b>: <br><code>=ВПР("Груша";A2:B4;2;ЛОЖЬ)</code></h2>
+<style>#luckysheet{width:100%;height:500px}</style>
+</head>
+<body>
+  <h2>Введите формулу в <b>B6</b>: <code>=ВПР("Груша";A2:B4;2;ЛОЖЬ)</code></h2>
   <div id="luckysheet"></div>
-  <div class="btn"><button onclick="checkAnswer()">Проверить</button></div>
+  <div style="text-align:center;margin:10px"><button onclick="checkAnswer()">Проверить</button></div>
   <script src="script.js"></script>
-</body></html>
-
-
+</body>
+</html>
